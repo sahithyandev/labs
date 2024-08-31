@@ -34,12 +34,17 @@ def adtan(value):
     return round(angle*rd, 10)
 
 
-AB = eval(input('Enter AB:'))
-BC = eval(input('Enter BC:'))
-CD = eval(input('Enter CD:'))
-AD = eval(input('Enter AD:'))
+index_no = input("Enter your index number (230---X): ")
 
-Omega = eval(input('Enter Angular Velocity:'))
+
+# in cm
+AB = 10
+BC = int("4" + index_no[3])
+CD = int("3" + index_no[4])
+AD = int("3" + index_no[5])
+
+
+Omega = 0.1 * (1 + int(index_no[5]))
 
 for theeta in range(0, 360):
     g = 90-theeta
