@@ -44,7 +44,27 @@ CD = int("3" + index_no[4])
 AD = int("3" + index_no[5])
 
 
+table_length = 45
+
+
+def print_parameter(label: str, value, unit: str = ""):
+    print(f"| {label}".ljust(table_length // 2) + " | " +
+          (str(value) + " " + unit).ljust(table_length//2 - 4) + "|")
+
+
 Omega = 0.1 * (1 + int(index_no[5]))
+instantaneous_angle = int(index_no[4:6])
+
+col_divider = ("-" * table_length)
+print(col_divider)
+print_parameter("Index No", index_no)
+print_parameter("AB", AB, "cm")
+print_parameter("BC", BC, "cm")
+print_parameter("CD", CD, "cm")
+print_parameter("AD", AD, "cm")
+print_parameter("Omega", Omega, "rad/s")
+print_parameter("Instantaneous angle", instantaneous_angle, "deg")
+print(col_divider)
 
 for theeta in range(0, 360):
     g = 90-theeta
@@ -61,4 +81,4 @@ for theeta in range(0, 360):
     Vcb = (Vbe*dsin(g)-dtan(p)*Vbe*dcos(g))/(dtan(p)*dcos(m)-dsin(m))
     Vce = (Vcb*dcos(m)+Vbe*dcos(g))/dcos(p)
     print(
-        f'Input Angle: {theeta} Output Angle : {O_Angle} Vce : {Vce} Vcb : {Vcb}')
+        f'Input Angle: {theeta} | Output Angle: {str(round(O_Angle, 8)).ljust(12, "0")} | V_ce: {str(round(Vce, 10)).ljust(15, "0")} | V_cb : {str(round(Vcb, 10)).ljust(15, "0")}')
