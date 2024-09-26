@@ -1,4 +1,5 @@
 import math
+import matplotlib.pyplot as plt
 
 
 def adsin(value):
@@ -39,9 +40,9 @@ index_no = input("Enter your index number (230---X): ")
 
 # in cm
 AB = 10
-BC = int("4" + index_no[3])
-CD = int("3" + index_no[4])
-AD = int("3" + index_no[5])
+BC = 40 + int(index_no[3])
+CD = 30 + int(index_no[4])
+AD = 30 + int(index_no[5])
 
 
 table_length = 45
@@ -66,6 +67,12 @@ print_parameter("Omega", Omega, "rad/s")
 print_parameter("Instantaneous angle", instantaneous_angle, "deg")
 print(col_divider)
 
+input_angles = []
+output_angles = []
+v_ce_values = []
+v_be_values = []
+v_cb_values = []
+
 for theeta in range(0, 360):
     g = 90-theeta
     if theeta == 180 or theeta == 0:
@@ -77,8 +84,19 @@ for theeta in range(0, 360):
     p = 90-O_Angle
     m_1 = adsin((CD*dsin(O_Angle)-(AB*dsin(theeta)))/BC)
     m = 90-m_1
+
     Vbe = Omega*(AB/100)
     Vcb = (Vbe*dsin(g)-dtan(p)*Vbe*dcos(g))/(dtan(p)*dcos(m)-dsin(m))
     Vce = (Vcb*dcos(m)+Vbe*dcos(g))/dcos(p)
+
+    input_angles.append(theeta)
+    output_angles.append(round(O_Angle, 8))
+    v_ce_values.append(round(Vce, 10))
+    v_be_values.append(round(Vbe, 10))
+    v_cb_values.append(round(Vcb, 10))
+
     print(
         f'Input Angle: {theeta} | Output Angle: {str(round(O_Angle, 8)).ljust(12, "0")} | V_ce: {str(round(Vce, 10)).ljust(15, "0")} | V_cb : {str(round(Vcb, 10)).ljust(15, "0")}')
+
+plt.plot(input_angles, v_ce_values, label="V_ce")
+plt.show()
