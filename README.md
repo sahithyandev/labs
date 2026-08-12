@@ -16,10 +16,13 @@ s1/
     └── sorting-algos/          # Bubble, heap, insertion, merge, quick, selection, shell sort
 
 s2/
-└── computer-organization-and-digital-design/  # VHDL labs (Vivado projects) + reusable IP cores
-    ├── ip/                     # Reusable VHDL IP (e.g. full_adder)
-    ├── lab1/ ... lab7/         # Weekly Vivado lab projects (adders, decoders, mux, multiplier, registers, counter)
-    └── README.md               # Notes for this course
+├── computer-organization-and-digital-design/  # VHDL labs (Vivado projects) + reusable IP cores
+│   ├── ip/                     # Reusable VHDL IP (e.g. full_adder)
+│   ├── lab1/ ... lab7/         # Weekly Vivado lab projects (adders, decoders, mux, multiplier, registers, counter)
+│   └── README.md               # Notes for this course
+└── dsa/                        # Data Structures & Algorithms (C++), weekly in-class/take-home exercises
+    ├── practice/                # Ad-hoc practice (graph/tree traversal)
+    └── week-02 ... week-11 (in-class / take-home)/  # Sorting, stacks, BSTs, heaps, hash tables, graphs
 ```
 
 ## License
