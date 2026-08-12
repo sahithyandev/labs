@@ -1,0 +1,33 @@
+op2=>operation: date = input('Enter the date in yyyy mm dd format: ').split(' ')
+cond5=>condition: if (len(date) != 3)
+sub9=>subroutine: print('Invalid date')
+sub11=>subroutine: exit(1)
+op16=>operation: try:
+    [y, m, d] = [int(i) for i in date]
+except:
+    print('Invalid date')
+    exit(1)
+cond19=>condition: if (m < 3)
+op23=>operation: m = (m + 12)
+op25=>operation: y = (y - 1)
+op30=>operation: a = ((2 * m) + ((6 * (m + 1)) // 10))
+op32=>operation: b = (((y + (y // 4)) - (y // 100)) + (y // 400))
+op34=>operation: f1 = (((d + a) + b) + 1)
+op36=>operation: f = (f1 % 7)
+sub38=>subroutine: print(f)
+
+op2->cond5
+cond5(yes)->sub9
+sub9->sub11
+sub11->op16
+op16->cond19
+cond19(yes)->op23
+op23->op25
+op25->op30
+op30->op32
+op32->op34
+op34->op36
+op36->sub38
+cond19(no)->op30
+cond5(no)->op16
+
