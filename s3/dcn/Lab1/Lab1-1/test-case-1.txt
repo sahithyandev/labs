@@ -1,0 +1,8 @@
+Sri,Lanka,is,a,country
+1 4 small
+2 -1 in
+2 -1 South
+2 -1 Asia
+3 5
+1 5 nation
+0

@@ -28,10 +28,13 @@ s3/
 ├── computer-architecture/      # ARM assembly & C labs (CS2053, University of Moratuwa)
 │   ├── Lab1/ ... Lab4/         # Assembly basics, exercises, filters/triplets, C-to-assembly
 │   └── README.md               # Notes for this course
-└── database-systems/           # SQL labs
-    ├── lab1/                   # DDL + data inserts
-    ├── lab2/                   # Queries over the same schema
-    └── lab3/                   # More queries
+├── database-systems/           # SQL labs
+│   ├── lab1/                   # DDL + data inserts
+│   ├── lab2/                   # Queries over the same schema
+│   └── lab3/                   # More queries
+└── dcn/                        # Data Communication Networks labs (C), own nested git repo
+    ├── Lab1/                   # Node/chain simulation (Lab1-1, Lab1-2-3)
+    └── Lab2/                   # PCM encoding
 ```
 
 ## Author
