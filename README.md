@@ -23,9 +23,18 @@ s2/
 └── dsa/                        # Data Structures & Algorithms (C++), weekly in-class/take-home exercises
     ├── practice/                # Ad-hoc practice (graph/tree traversal)
     └── week-02 ... week-11 (in-class / take-home)/  # Sorting, stacks, BSTs, heaps, hash tables, graphs
+
+s3/
+└── computer-architecture/      # ARM assembly & C labs (CS2053, University of Moratuwa)
+    ├── Lab1/ ... Lab4/         # Assembly basics, exercises, filters/triplets, C-to-assembly
+    └── README.md               # Notes for this course
 ```
+
+## Author
+
+Sahithyan K. (https://sahithyan.dev)
 
 ## License
 
-This is my own academic work, shared for reference only. See [LICENSE](LICENSE) — do not copy it for your own coursework.
+All rights reserved — see [LICENSE](LICENSE). This single license covers every course/lab folder in this repository.
 
