@@ -1,0 +1,227 @@
+mysql> SELECT name FROM 
+    -> instructor WHERE dept_name='Physics';
++----------+
+| name     |
++----------+
+| Einstein |
+| Gold     |
++----------+
+2 rows in set (0.01 sec)
+
+mysql> SELECT name FROM course WHERE dept_name='Comp. Sci.' AND credits=3;
+ERROR 1054 (42S22): Unknown column 'name' in 'field list'
+mysql> SELECT title FROM course WHERE dept_name='Comp. Sci.' AND credits=3;
++--------------------------+
+| title                    |
++--------------------------+
+| Robotics                 |
+| Image Processing         |
+| Database System Concepts |
++--------------------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT title FROM course WHERE dept_name='Comp. Sci.' AND credits=3 ORDER BY title ASC;
++--------------------------+
+| title                    |
++--------------------------+
+| Database System Concepts |
+| Image Processing         |
+| Robotics                 |
++--------------------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT title FROM course WHERE dept_name='Comp. Sci.' AND credits='3' ORDER BY title ASC;
++--------------------------+
+| title                    |
++--------------------------+
+| Database System Concepts |
+| Image Processing         |
+| Robotics                 |
++--------------------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT name FROM  instructor WHERE dept_name='Physics' ORDER BY name ASC;
++----------+
+| name     |
++----------+
+| Einstein |
+| Gold     |
++----------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT name FROM instructor WHERE dept_name='Comp. Sci.' AND salary>75000 ORDER BY salary DESC;
++--------+
+| name   |
++--------+
+| Brandt |
++--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT name FROM student WHERE total_cred>100 ORDER BY total_cred DESC;
+ERROR 1054 (42S22): Unknown column 'total_cred' in 'where clause'
+mysql> SELECT name FROM student WHERE total_cred>100 ORDER BY tot_cred DESC;
+ERROR 1054 (42S22): Unknown column 'total_cred' in 'where clause'
+mysql> SELECT name FROM student WHERE tot_cred>100 ORDER BY tot_cred DESC;
++--------+
+| name   |
++--------+
+| Tanaka |
+| Chavez |
+| Zhang  |
++--------+
+3 rows in set (0.00 sec)
+
+mysql> CREATE TABLE scholarship ()
+    -> ^C
+mysql> CREATE TABLE scholarship (
+    -> school_id varchar(5), student_id varchar(5), amount numeric(8,2),
+    -> primary key(school_id),
+    -> foreign key(student_id) references student(ID));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> INSERT INTO scholarship VALUES('00001','00128',40000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT course.title FROM course JOIN takes ON takes.course_id = course.course_id WHERE course.semester='Summer' AND year='2009';
+ERROR 1054 (42S22): Unknown column 'course.semester' in 'where clause'
+mysql> SELECT course.title FROM course JOIN takes ON takes.course_id = course.course_id WHERE takes.semester='Summer' AND takes.year='2009';
++-------------------+
+| title             |
++-------------------+
+| Intro. to Biology |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT semester FROM takes JOIN takes ON takes.course_id = course.course_id WHERE course.title='Genetics';
+ERROR 1066 (42000): Not unique table/alias: 'takes'
+mysql> SELECT semester FROM takes JOIN course ON takes.course_id = course.course_id WHERE course.title='Genetics';
++----------+
+| semester |
++----------+
+| Summer   |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT time_slot.day, time_slot.start_hr, time_slot.start_min FROM time_slot,section,course WHERE section.course_id = course.course_id AND section.time_slot_id=time_slot.time_slot_id;
++-----+----------+-----------+
+| day | start_hr | start_min |
++-----+----------+-----------+
+| F   |        9 |         0 |
+| M   |        9 |         0 |
+| W   |        9 |         0 |
+| F   |        8 |         0 |
+| M   |        8 |         0 |
+| W   |        8 |         0 |
+| W   |       10 |         0 |
+| R   |       14 |        30 |
+| T   |       14 |        30 |
+| R   |       10 |        30 |
+| T   |       10 |        30 |
+| F   |        8 |         0 |
+| M   |        8 |         0 |
+| W   |        8 |         0 |
+| F   |       13 |         0 |
+| M   |       13 |         0 |
+| W   |       13 |         0 |
+| F   |        9 |         0 |
+| M   |        9 |         0 |
+| W   |        9 |         0 |
+| F   |       11 |         0 |
+| M   |       11 |         0 |
+| W   |       11 |         0 |
+| F   |        8 |         0 |
+| M   |        8 |         0 |
+| W   |        8 |         0 |
+| F   |       11 |         0 |
+| M   |       11 |         0 |
+| W   |       11 |         0 |
+| F   |        9 |         0 |
+| M   |        9 |         0 |
+| W   |        9 |         0 |
+| F   |       11 |         0 |
+| M   |       11 |         0 |
+| W   |       11 |         0 |
+| F   |       13 |         0 |
+| M   |       13 |         0 |
+| W   |       13 |         0 |
+| F   |        8 |         0 |
+| M   |        8 |         0 |
+| W   |        8 |         0 |
++-----+----------+-----------+
+41 rows in set (0.01 sec)
+
+mysql> SELECT time_slot.day, time_slot.start_hr, time_slot.start_min FROM time_slot,section,course WHERE section.course_id = course.course_id AND section.time_slot_id=time_slot.time_slot_id AND course.title='Genetics' AND section.year='2010';
++-----+----------+-----------+
+| day | start_hr | start_min |
++-----+----------+-----------+
+| F   |        8 |         0 |
+| M   |        8 |         0 |
+| W   |        8 |         0 |
++-----+----------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT takes.course_id,course.title FROM takes JOIN course ON course.course_id = takes.course_id WHERE takes.ID='12345';
++-----------+----------------------------+
+| course_id | title                      |
++-----------+----------------------------+
+| CS-101    | Intro. to Computer Science |
+| CS-190    | Game Design                |
+| CS-315    | Robotics                   |
+| CS-347    | Database System Concepts   |
++-----------+----------------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT course_id FROM course WHEREN title='Robotics';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'title='Robotics'' at line 1
+mysql> SELECT course_id FROM course WHERE title='Robotics';
++-----------+
+| course_id |
++-----------+
+| CS-315    |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT course.title FROM prereq JOIN course ON course.course_id=prereq.prereq_id WHERE prereq.course_id=(SELECT course_id FROM course WHERE title='Robotics');
++----------------------------+
+| title                      |
++----------------------------+
+| Intro. to Computer Science |
++----------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT student.name FROM takes JOIN course ON course.course_id=takes.course_id JOIN student ON student.ID=takes.ID WHERE course.dept_name='Comp. Sci.';
++----------+
+| name     |
++----------+
+| Zhang    |
+| Shankar  |
+| Levy     |
+| Williams |
+| Brown    |
+| Bourikas |
+| Levy     |
+| Shankar  |
+| Williams |
+| Shankar  |
+| Bourikas |
+| Levy     |
+| Brown    |
+| Zhang    |
+| Shankar  |
++----------+
+15 rows in set (0.00 sec)
+
+mysql> SELECT DISTINCT student.name FROM takes JOIN course ON course.course_id=takes.course_id JOIN student ON student.ID=takes.ID WHERE course.dept_name='Comp. Sci.' ORDER BY student.name ASC;
++----------+
+| name     |
++----------+
+| Bourikas |
+| Brown    |
+| Levy     |
+| Shankar  |
+| Williams |
+| Zhang    |
++----------+
+6 rows in set (0.00 sec)
+
+mysql> notee

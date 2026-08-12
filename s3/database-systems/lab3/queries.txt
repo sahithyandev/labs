@@ -1,0 +1,500 @@
+mysql> source ./SmallRelationsDDL.txt
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> source ./smallRelationsInsertFile.txt
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+mysql> CREATE VIEW faculty AS SELECT ID, name, dept_name FROM instructor;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT * FROM faculty;
++-------+------------+------------+
+| ID    | name       | dept_name  |
++-------+------------+------------+
+| 10101 | Srinivasan | Comp. Sci. |
+| 12121 | Wu         | Finance    |
+| 15151 | Mozart     | Music      |
+| 22222 | Einstein   | Physics    |
+| 32343 | El Said    | History    |
+| 33456 | Gold       | Physics    |
+| 45565 | Katz       | Comp. Sci. |
+| 58583 | Califieri  | History    |
+| 76543 | Singh      | Finance    |
+| 76766 | Crick      | Biology    |
+| 83821 | Brandt     | Comp. Sci. |
+| 98345 | Kim        | Elec. Eng. |
++-------+------------+------------+
+12 rows in set (0.00 sec)
+
+mysql> ^C
+mysql> SELECT name FROM faculty WHERE dept_name='Biology';
++-------+
+| name  |
++-------+
+| Crick |
++-------+
+1 row in set (0.00 sec)
+
+mysql> CREATE VIEW department_info AS SELECT dept_name, building FROM department;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SELECT * FROM department_info;
++------------+----------+
+| dept_name  | building |
++------------+----------+
+| Biology    | Watson   |
+| Comp. Sci. | Taylor   |
+| Elec. Eng. | Taylor   |
+| Finance    | Painter  |
+| History    | Painter  |
+| Music      | Packard  |
+| Physics    | Watson   |
++------------+----------+
+7 rows in set (0.00 sec)
+
+mysql> CREATE VIEW instructor_loc AS SELECT * FROM faculty LEFT JOIN department_info USING (dept_name);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SELECT * FROM instructor_loc;
++------------+-------+------------+----------+
+| dept_name  | ID    | name       | building |
++------------+-------+------------+----------+
+| Comp. Sci. | 10101 | Srinivasan | Taylor   |
+| Finance    | 12121 | Wu         | Painter  |
+| Music      | 15151 | Mozart     | Packard  |
+| Physics    | 22222 | Einstein   | Watson   |
+| History    | 32343 | El Said    | Painter  |
+| Physics    | 33456 | Gold       | Watson   |
+| Comp. Sci. | 45565 | Katz       | Taylor   |
+| History    | 58583 | Califieri  | Painter  |
+| Finance    | 76543 | Singh      | Painter  |
+| Biology    | 76766 | Crick      | Watson   |
+| Comp. Sci. | 83821 | Brandt     | Taylor   |
+| Elec. Eng. | 98345 | Kim        | Taylor   |
++------------+-------+------------+----------+
+12 rows in set (0.00 sec)
+
+mysql> ALTER TABLE instructor ADD Image blob;
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE instructor;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| ID        | varchar(5)   | NO   | PRI | NULL    |       |
+| name      | varchar(20)  | NO   |     | NULL    |       |
+| dept_name | varchar(20)  | YES  | MUL | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| Image     | blob         | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT c.title, d.title FROM prereq JOIN course c ON prereq.course_id=c.course_id JOIN course d ON prereq.prereq_id=d.course_id ORDER BY d.title;
++---------------------------+----------------------------+
+| title                     | title                      |
++---------------------------+----------------------------+
+| Genetics                  | Intro. to Biology          |
+| Computational Biology     | Intro. to Biology          |
+| Game Design               | Intro. to Computer Science |
+| Robotics                  | Intro. to Computer Science |
+| Image Processing          | Intro. to Computer Science |
+| Database System Concepts  | Intro. to Computer Science |
+| Intro. to Digital Systems | Physical Principles        |
++---------------------------+----------------------------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT student.name, instructor.name FROM advisor JOIN student ON student.ID=advisor.s_ID JOIN instructor ON instructor.ID=advisor.i_ID ORDER BY student.name; 
++----------+------------+
+| name     | name       |
++----------+------------+
+| Aoi      | Kim        |
+| Bourikas | Kim        |
+| Brown    | Katz       |
+| Chavez   | Singh      |
+| Levy     | Einstein   |
+| Peltier  | Einstein   |
+| Shankar  | Srinivasan |
+| Tanaka   | Crick      |
+| Zhang    | Katz       |
++----------+------------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT instructor.ID, instructor.name, COUNT(teaches.sec_id) AS sections FROM instructor LEFT JOIN teaches USING (ID) GROUP BY instructor.ID ORDER BY instructor.name ASC;
++-------+------------+----------+
+| ID    | name       | sections |
++-------+------------+----------+
+| 83821 | Brandt     |        3 |
+| 58583 | Califieri  |        0 |
+| 76766 | Crick      |        2 |
+| 22222 | Einstein   |        1 |
+| 32343 | El Said    |        1 |
+| 33456 | Gold       |        0 |
+| 45565 | Katz       |        2 |
+| 98345 | Kim        |        1 |
+| 15151 | Mozart     |        1 |
+| 76543 | Singh      |        0 |
+| 10101 | Srinivasan |        3 |
+| 12121 | Wu         |        1 |
++-------+------------+----------+
+12 rows in set (0.01 sec)
+
+mysql> INSERT INTO section VALUES ('CS-101','2','Spring','2010','Packard','101','E');
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  INSERT INTO teaches VALUES ('10101','CS-101','1','Spring','2010');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT section.*, instructor.name FROM section LEFT JOIN teaches USING (sec_id, course_id, semester, year) LEFT JOIN instructor ON instructor.ID=teaches.ID WHERE section.semester='Spring' AND section.year=2010 ORDER BY course_id, sec_id, instructor.name;
++-----------+--------+----------+------+----------+-------------+--------------+------------+
+| course_id | sec_id | semester | year | building | room_number | time_slot_id | name       |
++-----------+--------+----------+------+----------+-------------+--------------+------------+
+| CS-101    | 1      | Spring   | 2010 | Packard  | 101         | F            | Katz       |
+| CS-101    | 1      | Spring   | 2010 | Packard  | 101         | F            | Srinivasan |
+| CS-101    | 2      | Spring   | 2010 | Packard  | 101         | E            | NULL       |
+| CS-315    | 1      | Spring   | 2010 | Watson   | 120         | D            | Srinivasan |
+| CS-319    | 1      | Spring   | 2010 | Watson   | 100         | B            | Katz       |
+| CS-319    | 2      | Spring   | 2010 | Taylor   | 3128        | C            | Brandt     |
+| FIN-201   | 1      | Spring   | 2010 | Packard  | 101         | B            | Wu         |
+| HIS-351   | 1      | Spring   | 2010 | Painter  | 514         | C            | El Said    |
+| MU-199    | 1      | Spring   | 2010 | Packard  | 101         | D            | Mozart     |
++-----------+--------+----------+------+----------+-------------+--------------+------------+
+9 rows in set (0.00 sec)
+
+mysql> INSERT INTO department VALUES ('Mechanical', 'Watson', 90000);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT department.dept_name, COUNT(ID)
+    -> FROM department LEFT JOIN instructor ON department.dept_name=instructor.dept_name
+    -> GROUP BY department.dept_name ORDER BY department.dept_name;
++------------+-----------+
+| dept_name  | COUNT(ID) |
++------------+-----------+
+| Biology    |         1 |
+| Comp. Sci. |         3 |
+| Elec. Eng. |         1 |
+| Finance    |         2 |
+| History    |         2 |
+| Mechanical |         0 |
+| Music      |         1 |
+| Physics    |         2 |
++------------+-----------+
+8 rows in set (0.01 sec)
+
+mysql> notee
