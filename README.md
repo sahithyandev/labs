@@ -14,6 +14,12 @@ s1/
     ├── labs/                   # Weekly lab exercises (Lab1-Lab9, 10)
     ├── searching-algos/        # Binary/sequential search
     └── sorting-algos/          # Bubble, heap, insertion, merge, quick, selection, shell sort
+
+s2/
+└── computer-organization-and-digital-design/  # VHDL labs (Vivado projects) + reusable IP cores
+    ├── ip/                     # Reusable VHDL IP (e.g. full_adder)
+    ├── lab1/ ... lab7/         # Weekly Vivado lab projects (adders, decoders, mux, multiplier, registers, counter)
+    └── README.md               # Notes for this course
 ```
 
 ## License
