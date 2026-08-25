@@ -1,0 +1,8 @@
+Bi-linear interpolation method: Exercise
+• Write a python script to re-sample an image based on bi-linear interpolation and nearest neighbour methods
+• Create the new pixel grid
+• For each pixel in the new grid,
+• Compute position in relation to N4 (p) neighbours.
+• Compute the new pixel value
+• Assign new pixel
+• Compare results with what you got for nearest neighbour method
