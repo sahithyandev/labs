@@ -1,0 +1,8 @@
+- Assume that a reference histogram is made available as a 256 element array (i.e. each element has the CDF value corresponding to its index as the grey level).  Write a function to  adjust grey levels of a test image to match the histogram distribution of the reference CDF.
+- Construct the reference CDF using a good quality image downloaded from Internet.  Then download a test image and use your script to adjust its contrast.  Upload the following to the assignment.
+- Python script :  <<your_indexNo>>.py
+- Reference image: <<ref_>><<your_index_no>>.<<ext>>
+- Test image (original) : <<test_>><<your_index_no>>.<<ext>>
+- PDF and CDF of reference image (side-by-side images): <<rhist_>><<your_index_no>>
+- PDF and CDF of reference image (side-by-side images, after processing): <<thist_>><<your_index_no>>
+- Upload all images as a single ZIP file (only ZIP format) with your index number as the file name
