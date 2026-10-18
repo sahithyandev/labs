@@ -1,0 +1,14 @@
+Continuous assessment - program vulnerabilities - Part 2
+
+Present small code segments that use the following techniques to mitigate the programming vulnerabilities, and include brief comments in the code segment to enable a reviewer to understand what the code does:
+
+Canary
+Bounds checking
+Tagging
+You must submit a single text file containing the code segments with each part properly described in a comment.
+
+The text file must have the correct file extension to allow direct compilation and execution. 
+
+The code must compile and run without any errors. Compile-time or run-time warnings that does not impede execution is tolerated but is not desirable.
+
+A main function may be required as the code segment execution harness.

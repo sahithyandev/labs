@@ -1,0 +1,12 @@
+Continuous assessment - program vulnerabilities - Part 3
+
+Present a web-based application code to illustrate the following scenarios, and include brief comments in the code segment to enable a reviewer to understand what the code does:
+
+- a code segment in the web application that allows an attacker to use SQL injection
+- a code segment in the web application that prevents an attacker to use SQL injection
+
+You must submit a single text file containing the web application code with each part properly described in a comment.
+
+The text file must have the correct file extension to allow direct access using a web browser.
+
+Provide a comment section in your code with instructions on how the back-end database should be constructed to work with your web-based application
