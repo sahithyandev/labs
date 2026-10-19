@@ -1,0 +1,7 @@
+*Exercise*
+
+Search the Internet and prepare a small report on JPEG compression of a 24bpp image. Describe the processing steps with examples (including native python code).
+
+Upload your report in either PDF or DOC format.
+
+User JR_<indexNo> as the file name and the name of your program.
